@@ -19,11 +19,21 @@ fr:
         pour les titulaires d'une version Enterprise.
       manage_colors: Modifier les options du sélecteur de couleur
       instructions:
+        alternative_color: Couleur d'accentuation, habituellement utilisée pour le
+          bouton le plus important à l'écran.
+        content_link_color: Font color of most of the links.
         primary_color: Couleur principale.
         primary_color_dark: Habituellement, un ton plus sombre de la couleur principale
           utilisée pour les effets de mise en évidence.
-        alternative_color: Couleur d'accentuation, habituellement utilisée pour le
-          bouton le plus important à l'écran.
+        header_bg_color: Background color of the header.
+        header_item_bg_hover_color: Background color of clickable header items when
+          hovered with the mouse.
+        header_item_font_color: Font color of clickable header items.
+        header_item_font_hover_color: Font color of clickable header items when hovered
+          with the mouse.
+        header_border_bottom_color: Thin line under the header. Leave this field empty
+          if you don't want any line.
+        main_menu_bg_color: Left side menu's background color.
     enterprise:
       upgrade_to_ee: Mise à niveau vers la version Entreprise
       add_token: Charger une licence de version Entreprise
@@ -64,6 +74,8 @@ fr:
       further_information_before: Veuillez jeter un oeil à
       link_name: comment migrer vers la nouvelle ligne du temps.
       further_information_after: ''
+    calendar:
+      removal: 'Please note: This module is going to be removed with OpenProject 8.0.'
   groups:
     index:
       no_results_title_text: Il n'y a actuellement aucun groupe.
@@ -1237,6 +1249,8 @@ fr:
   label_logged_as: Connecté en tant que
   label_login: Connexion
   label_custom_logo: Logo personnalisé
+  label_custom_favicon: Custom favicon
+  label_custom_touch_icon: Custom touch icon
   label_logout: Déconnexion
   label_main_menu: Menu principal
   label_manage_groups: Gérer les groupes
@@ -1245,6 +1259,7 @@ fr:
   label_me: moi
   label_member_new: Nouveau membre
   label_member_plural: Membres
+  label_view_all_members: Afficher tous les membres
   label_menu_item_name: Nom de l'élément du menu
   label_message: Message
   label_message_last: Dernier message
@@ -1411,6 +1426,7 @@ fr:
   label_storage_group: Système de fichiers de stockage %{identifier}
   label_storage_for: Comprend le stockage pour
   label_string: Texte
+  label_subproject: Sous-projet
   label_subproject_new: Nouveau sous-projet
   label_subproject_plural: Sous-projets
   label_subtask_plural: Sous-tâche
@@ -1704,9 +1720,9 @@ fr:
           mb: Mo
           tb: To
   onboarding:
-    heading_getting_started: Get an overview
-    text_getting_started_description: Get a quick overview of project management and
-      team collaboration with OpenProject.
+    heading_getting_started: Avoir une vue d’ensemble
+    text_getting_started_description: Obtenez un aperçu rapide de la gestion de projets
+      et de la collaboration en équipe avec OpenProject.
     text_show_again: Vous pouvez relancer cette vidéo au départ du menu d'aide
     welcome: Bienvenue dans OpenProject
   permission_add_work_package_notes: Ajouter des notes
@@ -2108,8 +2124,8 @@ fr:
 '
   text_form_configuration_drag_to_activate: Faites glisser les champs ici pour les
     activer
-  text_form_configuration_required_attribute: Attribute is marked required and thus
-    always shown
+  text_form_configuration_required_attribute: L’attribut est marqué requis et donc
+    toujours montré
   text_caracters_maximum: "%{count} caractères maximale."
   text_caracters_minimum: Doit contenir au moins %{count} caractères.
   text_comma_separated: Valeurs multiples autorisées (séparées par une virgule).
@@ -2123,9 +2139,22 @@ fr:
     doivent être activés par type de lot de travaux et par projet.
 
 '
-  text_custom_logo_instructions: Un logo blanc sur fond transparent est recommandé.
-    Pour obtenir les meilleurs résultats sur les écrans classique et retina, assurez-vous
-    que les dimensions de votre image soient 460px sur 110px.
+  text_custom_logo_instructions: 'A white logo on transparent background is recommended.
+    For best results on both, conventional and retina displays, make sure your image''s
+    dimensions are 460px by 60px.
+
+'
+  text_custom_favicon_instructions: 'This is the tiny icon that appears in your browser
+    window/tab next to the page''s title. It''s needs to be a squared 32 by 32 pixels
+    sized PNG image file with a transparent background.
+
+'
+  text_custom_touch_icon_instructions: 'This is the icon that appears in your mobile
+    or tablet when you place a bookmark on your homescreen. It''s needs to be a squared
+    180 by 180 pixels sized PNG image file. Please make sure the image''s background
+    is not transparent otherwise it will look bad on iOS.
+
+'
   text_default_administrator_account_changed: Changement du compte Administrateur
     par defaut
   text_default_encoding: 'Défaut: UTF-8'
