@@ -431,9 +431,9 @@ de:
         end_insertion: Ende der Einfügung
         end_deletion: Ende des Löschvorgangs
         fixed_version: Version
-        parent: Übergeordnete Aufgabe
-        parent_issue: Übergeordnete Aufgabe
-        parent_work_package: Übergeordnete Aufgabe
+        parent: Hauptaufgabe
+        parent_issue: Hauptaufgabe
+        parent_work_package: Hauptaufgabe
         priority: Priorität
         progress: Fortschritt (%)
         responsible: Verantwortlicher
